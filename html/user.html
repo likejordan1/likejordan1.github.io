@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>user</title>
+  <script src="../lib/jquery-3.5.1.js"></script>
+  <script src="../js/user.js"></script>
+  <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+    <header>
+        <div class="topMenu">
+        <!-- background-repeat: no-repeat -> 배경 이미지의 반복 여부와 반복 방향을 정합니다 -->
+        <!-- background-size: cover -> 사이즈 지정 -->
+            <div class="topimg">
+            <a href="index.html"><img src="../images/logo.png" alt="" ></a>
+            </div>
+            <div class="topfornt">
+                <a href="../html/selfy.html" style="color: snow; text-decoration: none;">자기소개</a>
+                <a href="../html/shoes2.html" style="color: snow; text-decoration: none;">SHOES</a>
+                <a href="../html/roadMap.html" style="color: snow; text-decoration: none;">로드맵</a>
+                <a href="../html/user.html" style="color: snow; text-decoration: none;">회원관리</a>
+            </div>
+        </div>    
+    </header>
+    <section>
+        <div class="lg">
+            <h2>LOGIN</h2>    
+        </div>
+        <form action="javascript:loadGuestBook();">
+            <table id="guestBookInput">
+            <tr>
+                <th><label for="userId">ID</label></th>
+                <td><input type="text" name="userName" id="userName"></td>
+                <td rowspan="2">
+                    <input  type="submit" value="Login" style="height: 45px; font-weight: bold;">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="pwd1">PW</label></th>
+                <td><input type="password" name="pwd1" id="pwd1"></td>
+            </tr>
+
+            </table>
+        </form>
+        <hr>
+        <form action="javascript:saveGuestBook();" id="memberEnrollFrm" name="memberEnrollFrm" method="GET">
+            <div class="lg2">
+                <fieldset>
+                    <legend>회원가입</legend>
+                    <!-- ul>(li>label+input)*4 -->
+                    <ul>
+                        <li><label for="userId">아이디 : </label><input type="text" name="userId" id="userId"></li>
+                        <li><label for="memberName">이름 : </label><input type="text" name="memberName" id="memberName"></li>
+                        <li><label for="pwd">비밀번호 : </label><input type="password" name="pwd" id="pwd"></li>
+                        <li><label for="pwdCheck">비밀번호 확인 : </label><input type="password" id="pwdCheck"></li>
+                        <li><input type="submit" value="가입" style="width: 60px; font-weight: bold; text-align: center;"></li>
+                    </ul>
+            
+                    </fieldset>
+            </div>  
+        </form>
+        <div class="wrapper">
+            <table id="guestBook"></table>
+        </div>
+    </section>
+    
+</body>
+</html>

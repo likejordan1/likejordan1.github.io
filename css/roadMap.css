@@ -1,0 +1,70 @@
+html{
+    width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+}
+header{
+    
+    padding: 0px;
+    height: 50px;
+    background-color: black;
+    margin: 0 auto;
+}
+header .topimg{
+   padding-top: 10px;
+    width: 100px; 
+    height: 5px;  
+    background-size: cover; 
+    float: left;
+}
+header .topfornt{
+    display: flex; /*lex는 수평이 될 요소들의 Container(box-container)에 display: flex;를 적용합니다.*/
+    justify-content: space-around;  /*항목은 기본 축을 따라 정렬 컨테이너 내에서 고르게 분포됩니다. 인접한 항목의 각 쌍 사이의 간격은 동일합니다. 
+                              첫 번째 항목 앞과 마지막 항목 뒤의 빈 공간은 각 인접한 항목 쌍 사이의 공간의 절반과 같습니다.*/
+    font-size: small;
+    padding-top: 17px;
+    text-decoration:none
+}
+.rmtitle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size:30px;
+    color: black;
+}
+.rm{
+    padding: 20px;
+    height: 768px;
+    background-color: black;
+}
+.rm div > h3{
+    color: snow;
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: bold;
+    font-size: 60px;
+}
+.rm div > p{
+    padding-left: 700px;
+    color: snow;
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: bold;
+    font-size: 40px;
+}
+.text #text1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: snow;
+    padding-left: 0px;
+}
+
+
+/* .image_table {width:1024px;margin:0 auto;}
+.image_table ul {font-size:0;text-align:center;  padding-inline-start: 0px;}
+.image_table ul li {font-size:12px;display:inline-block;vertical-align:top;width:25%;}
+.image_table ul li a {text-decoration:none;}
+.image_table ul li a {display:block;width:auto;background:#f5f5f5;margin:5px;}
+.image_table ul li a .screen {overflow:hidden;font-size:0;height:160px;} /* 이미지를 담은 박스 스타일 : 이 영역보다 크면 가리워지는 코드 overflow:hidden; absolute의 기준을 잡기 위해 position:relative를 적용*/
+/* .image_table ul li a img {width:100%;transition:transform 1s;}
+.image_table ul li a h3 {font-size:16px;color:#000;} /* 제목 스타일 */
+/* .image_table ul li a p {padding:12px;color:#666;} /* 내용 스타일 */
+/* .image_table ul li a:hover img {transform:scale(1.2);}  */
